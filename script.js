@@ -7,27 +7,24 @@ onlyGaryApp.config(function($routeProvider, $locationProvider) {
 			templateUrl : 'pages/home.html',
 			controller : 'mainController'
 		})
-
 		.when('/about', {
 			templateUrl : 'pages/about.html',
-			controller : 'aboutController'
 		})
-
 		.when('/contact', {
 			templateUrl : 'pages/contact.html',
-			controller : 'contactController'
+		})
+		.when('/powerlifting', {
+			templateUrl : 'pages/powerlifting.html',
+		})
+		.when('/gsxr750', {
+			templateUrl : 'pages/gsxr750.html',
+		})
+		.when('/sc300', {
+			templateUrl : 'pages/sc300.html',
 		});
-	$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(false);
 });
 
 onlyGaryApp.controller('mainController', function($scope) {
-	$scope.message = 'Test Main!';
-});
-
-onlyGaryApp.controller('aboutController', function($scope) {
-	$scope.message = 'Test About!';
-});
-
-onlyGaryApp.controller('contactController', function($scope) {
-	$scope.message = 'Test Contact!';
+	// $scope.message = 'Test Main!';
 });

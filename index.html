@@ -50,9 +50,18 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll"><a href="#about">About</a></li>
-            <li class="page-scroll"><a href="#contact">Contact</a></li>
-            <li><a href="https://github.com/gary5wang"><img border="0" alt="GitHub" src="/img/GitHub_Logo.png" width="50" height="20"></a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#powerlifting">Powerlifting</a></li>
+                  <li><a href="#gsxr750">2007 Suzuki GSX-R750</a></li>
+                  <li><a href="#sc300">1993 Lexus SC300</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -74,7 +83,7 @@
     </div> <!-- /container -->
 
     <div id="main" class="page-scroll-fix">
-      <div ng-view></div>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2" ng-view></div>
     </div>
 
 
