@@ -1,3 +1,3 @@
 # onlygary
 
-Just a simple for playing around with bootstrap
+Just a simple site for playing around with bootstrap
